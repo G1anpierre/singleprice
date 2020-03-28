@@ -1,0 +1,21 @@
+
+@mixin font($font-size, $line-height, $font-weight, $color: $fs-black, $letter-spacing: false, $text-transform: false) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $color;
+
+    @if $text-transform {
+        text-transform: $text-transform;
+    }
+
+    @if $letter-spacing {
+        text-transform: $letter-spacing;
+    }
+}
+
+/*
+@include font(18px, 26px, 700, false, 0.75px);
+
+@include font(18px, 22px, 300, pink, false, uppercase);s
+*/
