@@ -1,15 +1,32 @@
 @import "variables.scss";
 @import "../src/scss/base/typography";
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: palegoldenrod;
+}
 
 .pricing {
 
-  background-color: $backgroundJoin;
-  margin-left: -15px;
-  margin-right: -15px;
+  .container {
+    max-width: 690px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
 
   .join {
-    
+    background-color: $white;
     padding: 1.75rem 1.5rem 2rem 1.5rem;
 
     &__title {
@@ -36,6 +53,7 @@
     margin-left: 0rem;
     margin-right: 0rem;
     padding: 1.5rem;
+    height: 100%;
 
     &__title {
       font-family: 'Karla', sans-serif;
@@ -72,6 +90,25 @@
       @include font(1rem, 1, 700, $white);
       padding-top: .8rem;
       padding-bottom: .8rem;
+    }
+  }
+
+  .whyus {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    background-color: rgba($color: $primaryColor, $alpha: .85);
+    padding: 1.5rem;
+    height: 100%;
+    &__title {
+      @include font(1.125rem, 1, 700, $white);
+      margin-bottom: 1rem;
+    }
+
+    &__group {
+      list-style: none;
+      font-family: 'Karla', sans-serif;
+      @include font(.8rem, 1.429, 400, $white);
+      opacity: .75;
     }
   }
 

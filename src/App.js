@@ -8,7 +8,7 @@ const App = props => {
   return (
       <div className="pricing">
         
-      <div className="container-fluid">
+      <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="join">
@@ -19,7 +19,7 @@ const App = props => {
             </div>
           </div>
           
-          <div className="row">
+          <div className="row no-gutters">
               <div className="col-12 col-md-6">
                     <div className="subscription">
                         <h3 className="subscription__title">Monthly Subscription</h3>
@@ -34,7 +34,8 @@ const App = props => {
           
               <div className="col-12 col-md-6">
                     <div className="whyus"> 
-                      <ul>
+                      <h3 className="whyus__title">Why Us</h3>
+                      <ul className="whyus__group list-group">
                         <li>Tutorials by Industry experts</li>
                         <li>Peer & expert code review</li>
                         <li>Coding exercises</li>
