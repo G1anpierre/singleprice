@@ -1,0 +1,28 @@
+@import "../variables.scss";
+@import "../../src/scss/base/typography";
+@import "~bootstrap/scss/bootstrap";
+
+
+.whyus {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: rgba($color: $primaryColor, $alpha: .85);
+    padding: 1.5rem;
+    height: 100%;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 0;
+    }
+
+    &__title {
+      @include font(1.125rem, 1, 700, $white);
+      margin-bottom: 1rem;
+    }
+
+    &__group {
+      list-style: none;
+      font-family: 'Karla', sans-serif;
+      @include font(.8rem, 1.429, 400, $white);
+      opacity: .75;
+    }
+  }

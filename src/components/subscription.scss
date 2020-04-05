@@ -1,0 +1,56 @@
+@import "../variables.scss";
+@import "../../src/scss/base/typography";
+@import "~bootstrap/scss/bootstrap";
+
+
+.subscription {
+    background-color: $primaryColor;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 1.5rem;
+    height: 100%;
+
+    @include media-breakpoint-up(md) {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-family: 'Karla', sans-serif;
+      @include font(1.125rem, 1, 700, $white);
+      margin-bottom: 1rem;
+    }
+
+    &__amount {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .price {
+        font-family: 'Karla', sans-serif;
+        @include font(2rem, 1, 700, $white);
+        margin-right: .5rem;
+      }
+
+      .month {
+        font-family: 'Karla', sans-serif;
+        @include font(1rem, 1.625, 400, $white);
+        opacity: .5;
+      }
+    }
+
+    
+    &__text {
+      font-family: 'Karla', sans-serif;
+      @include font(1rem , 1, 400, $white);
+      margin-bottom: 1.625rem;
+    }
+
+    &__button {
+      font-family: 'Karla', sans-serif;
+      background-color: $secondaryColor;
+      @include font(1rem, 1, 700, $white);
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+    }
+    
+  }

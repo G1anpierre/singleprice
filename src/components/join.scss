@@ -1,0 +1,29 @@
+@import "../variables.scss";
+@import "../../src/scss/base/typography";
+@import "~bootstrap/scss/bootstrap";
+
+
+.join {
+    background-color: $white;
+    padding: 1.75rem 1.5rem 2rem 1.5rem;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &__title {
+      font-family: 'Karla', sans-serif;
+      @include font(1.25rem, 1, 700, $primaryColor);
+      margin-bottom: 1.5rem;
+    }
+
+    &__conditions {
+      font-family: 'Karla', sans-serif;
+     @include font(1rem, 1, 700, $secondaryColor);
+     margin-bottom: 1.125rem;
+    }
+
+    &__text {
+      font-family: 'karla', sans-serif;
+      @include font(.875rem, 1.857, 400, $text);
+    }
+
+  }
